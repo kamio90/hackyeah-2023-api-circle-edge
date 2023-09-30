@@ -14,6 +14,7 @@ import { DevelopmentPathModule } from './development-path/development-path.modul
 import { EventModule } from './event/event.module';
 import { DiscussionCircleModule } from './discusstion-circle/discusstion-circle.module';
 import { PointModule } from './point/point.module';
+import { ProjectModule } from './project/project.module';
 
 @Module({
   imports: [
@@ -30,6 +31,7 @@ import { PointModule } from './point/point.module';
     EventModule,
     DiscussionCircleModule,
     PointModule,
+    ProjectModule,
   ],
   controllers: [AppController],
   providers: [AppService],
