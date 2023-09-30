@@ -7,6 +7,7 @@ import { CompanyModule } from './company/company.module';
 import { CityModule } from './city/city.module';
 import { PersonModule } from './person/person.module';
 import { UEModule } from './ue/ue.module';
+import { QuizModule } from './quiz/quiz.module';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { UEModule } from './ue/ue.module';
     CityModule,
     PersonModule,
     UEModule,
+    QuizModule,
   ],
   controllers: [AppController],
   providers: [AppService],
