@@ -4,9 +4,15 @@ import { AppService } from './app.service';
 import { MongooseModule } from '@nestjs/mongoose';
 import { UserModule } from './user/user.module';
 import { CompanyModule } from './company/company.module';
+import { CityModule } from './city/city.module';
 
 @Module({
-  imports: [MongooseModule.forRoot('mongodb://localhost/nest'), UserModule, CompanyModule],
+  imports: [
+    MongooseModule.forRoot('mongodb://localhost/nest'),
+    UserModule,
+    CompanyModule,
+    CityModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
