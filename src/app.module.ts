@@ -13,6 +13,7 @@ import { TrainingModule } from './trening/trening.module';
 import { DevelopmentPathModule } from './development-path/development-path.module';
 import { EventModule } from './event/event.module';
 import { DiscussionCircleModule } from './discusstion-circle/discusstion-circle.module';
+import { PointModule } from './point/point.module';
 
 @Module({
   imports: [
@@ -28,6 +29,7 @@ import { DiscussionCircleModule } from './discusstion-circle/discusstion-circle.
     DevelopmentPathModule,
     EventModule,
     DiscussionCircleModule,
+    PointModule,
   ],
   controllers: [AppController],
   providers: [AppService],
