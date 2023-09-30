@@ -12,6 +12,7 @@ import { JobOfferModule } from './job-offer/job-offer.module';
 import { TrainingModule } from './trening/trening.module';
 import { DevelopmentPathModule } from './development-path/development-path.module';
 import { EventModule } from './event/event.module';
+import { DiscussionCircleModule } from './discusstion-circle/discusstion-circle.module';
 
 @Module({
   imports: [
@@ -26,6 +27,7 @@ import { EventModule } from './event/event.module';
     TrainingModule,
     DevelopmentPathModule,
     EventModule,
+    DiscussionCircleModule,
   ],
   controllers: [AppController],
   providers: [AppService],
