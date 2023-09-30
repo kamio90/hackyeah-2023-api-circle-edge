@@ -8,6 +8,7 @@ import { CityModule } from './city/city.module';
 import { PersonModule } from './person/person.module';
 import { UEModule } from './ue/ue.module';
 import { QuizModule } from './quiz/quiz.module';
+import { JobOfferModule } from './job-offer/job-offer.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { QuizModule } from './quiz/quiz.module';
     PersonModule,
     UEModule,
     QuizModule,
+    JobOfferModule,
   ],
   controllers: [AppController],
   providers: [AppService],
