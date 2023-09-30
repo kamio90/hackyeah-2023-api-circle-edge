@@ -9,6 +9,7 @@ import { PersonModule } from './person/person.module';
 import { UEModule } from './ue/ue.module';
 import { QuizModule } from './quiz/quiz.module';
 import { JobOfferModule } from './job-offer/job-offer.module';
+import { TrainingModule } from './trening/trening.module';
 
 @Module({
   imports: [
@@ -20,6 +21,7 @@ import { JobOfferModule } from './job-offer/job-offer.module';
     UEModule,
     QuizModule,
     JobOfferModule,
+    TrainingModule,
   ],
   controllers: [AppController],
   providers: [AppService],
