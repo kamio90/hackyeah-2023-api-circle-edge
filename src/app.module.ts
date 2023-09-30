@@ -15,6 +15,7 @@ import { EventModule } from './event/event.module';
 import { DiscussionCircleModule } from './discusstion-circle/discusstion-circle.module';
 import { PointModule } from './point/point.module';
 import { ProjectModule } from './project/project.module';
+import { NewsFeedModule } from './news-feed/news-feed.module';
 
 @Module({
   imports: [
@@ -32,6 +33,7 @@ import { ProjectModule } from './project/project.module';
     DiscussionCircleModule,
     PointModule,
     ProjectModule,
+    NewsFeedModule,
   ],
   controllers: [AppController],
   providers: [AppService],
