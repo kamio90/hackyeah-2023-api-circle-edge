@@ -6,6 +6,7 @@ import { UserModule } from './user/user.module';
 import { CompanyModule } from './company/company.module';
 import { CityModule } from './city/city.module';
 import { PersonModule } from './person/person.module';
+import { UEModule } from './ue/ue.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { PersonModule } from './person/person.module';
     CompanyModule,
     CityModule,
     PersonModule,
+    UEModule,
   ],
   controllers: [AppController],
   providers: [AppService],
