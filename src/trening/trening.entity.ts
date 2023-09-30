@@ -8,6 +8,18 @@ export class Training extends Document {
 
   @Prop()
   description: string;
+
+  @Prop()
+  companyLogo: string;
+
+  @Prop()
+  price: string;
+
+  @Prop()
+  link: string;
+
+  @Prop()
+  treningDesc: string;
 }
 
 export const TrainingSchema = SchemaFactory.createForClass(Training);

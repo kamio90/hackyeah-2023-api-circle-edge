@@ -8,6 +8,21 @@ export class JobOffer extends Document {
 
   @Prop()
   description: string;
+
+  @Prop()
+  localization: string;
+
+  @Prop()
+  contract: string;
+
+  @Prop()
+  skill: string;
+
+  @Prop([String])
+  stack: string[];
+
+  @Prop()
+  companyLogo: string;
 }
 
 export const JobOfferSchema = SchemaFactory.createForClass(JobOffer);
