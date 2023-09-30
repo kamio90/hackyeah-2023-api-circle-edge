@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { User } from './user.entity';
 import { UserRepository } from './user.repository';
 
@@ -20,5 +20,14 @@ export class UserService {
 
   async updateAvatar(userId: string, avatarPath: string): Promise<User> {
     return this.userRepository.updateAvatar(userId, avatarPath);
+  }
+
+  async setContent(userId: string, content: string): Promise<User> {
+    const user = await this.userRepository.findById(userId);
+    if (!user) {
+      throw new NotFoundException('User not found');
+    }
+    user.content = content;
+    return user.save();
   }
 }

@@ -11,6 +11,9 @@ export class User extends Document {
 
   @Prop()
   avatar: string;
+
+  @Prop()
+  content: string;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);

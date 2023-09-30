@@ -7,6 +7,7 @@ import {
   UseInterceptors,
   UploadedFile,
   Req,
+  Patch,
 } from '@nestjs/common';
 import { User } from './user.entity';
 import { UserService } from './user.service';
@@ -39,5 +40,13 @@ export class UserController {
   ): Promise<User> {
     const avatarPath = `uploads/avatars/${file.filename}`;
     return this.userService.updateAvatar('userId', avatarPath);
+  }
+
+  @Patch(':id/set-content')
+  async setContent(
+    @Param('id') userId: string,
+    @Body('content') content: string,
+  ): Promise<User> {
+    return this.userService.setContent(userId, content);
   }
 }
