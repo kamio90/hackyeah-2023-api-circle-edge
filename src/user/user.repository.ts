@@ -17,6 +17,11 @@ export class UserRepository {
   async findAll(): Promise<User[]> {
     return this.userModel.find().exec();
   }
+  async updateAvatar(userId: string, avatarPath: string): Promise<User> {
+    return this.userModel
+      .findByIdAndUpdate(userId, { avatar: avatarPath }, { new: true })
+      .exec();
+  }
 
   async findById(id: string): Promise<User> {
     return this.userModel.findById(id).exec();

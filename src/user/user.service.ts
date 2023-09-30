@@ -17,4 +17,8 @@ export class UserService {
   async findById(id: string): Promise<User> {
     return this.userRepository.findById(id);
   }
+
+  async updateAvatar(userId: string, avatarPath: string): Promise<User> {
+    return this.userRepository.updateAvatar(userId, avatarPath);
+  }
 }
