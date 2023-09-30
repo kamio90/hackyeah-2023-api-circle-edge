@@ -11,6 +11,7 @@ import { QuizModule } from './quiz/quiz.module';
 import { JobOfferModule } from './job-offer/job-offer.module';
 import { TrainingModule } from './trening/trening.module';
 import { DevelopmentPathModule } from './development-path/development-path.module';
+import { EventModule } from './event/event.module';
 
 @Module({
   imports: [
@@ -24,6 +25,7 @@ import { DevelopmentPathModule } from './development-path/development-path.modul
     JobOfferModule,
     TrainingModule,
     DevelopmentPathModule,
+    EventModule,
   ],
   controllers: [AppController],
   providers: [AppService],
