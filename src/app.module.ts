@@ -10,6 +10,7 @@ import { UEModule } from './ue/ue.module';
 import { QuizModule } from './quiz/quiz.module';
 import { JobOfferModule } from './job-offer/job-offer.module';
 import { TrainingModule } from './trening/trening.module';
+import { DevelopmentPathModule } from './development-path/development-path.module';
 
 @Module({
   imports: [
@@ -22,6 +23,7 @@ import { TrainingModule } from './trening/trening.module';
     QuizModule,
     JobOfferModule,
     TrainingModule,
+    DevelopmentPathModule,
   ],
   controllers: [AppController],
   providers: [AppService],
