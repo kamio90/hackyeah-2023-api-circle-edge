@@ -16,12 +16,12 @@ import { DiscussionCircleModule } from './discusstion-circle/discusstion-circle.
 import { PointModule } from './point/point.module';
 import { ProjectModule } from './project/project.module';
 import { NewsFeedModule } from './news-feed/news-feed.module';
+import * as dotenv from 'dotenv';
 
+dotenv.config();
 @Module({
   imports: [
-    MongooseModule.forRoot(
-      process.env.MONGODB_URI || 'mongodb://localhost/nest',
-    ),
+    MongooseModule.forRoot(process.env.MONGODB_URI),
     UserModule,
     CompanyModule,
     CityModule,
